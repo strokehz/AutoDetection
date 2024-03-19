@@ -1,9 +1,9 @@
 #ifndef SCREEN_H_
 #define SCREEN_H_
 
-#include "Resolution/Resolution.h"
+#include "Resolution/Resolution.hpp"
 
-#include "States/ScreenStates.h"
+#include "States/ScreenStates.hpp"
 
 #include <memory>
 
@@ -12,9 +12,11 @@ namespace Screen
 	class FeaturesScreen
 	{
 	public:
-		[[nodiscard]] Resolution resolution_screen() const noexcept;
+		[[nodiscard]] Resolution resolution_screen() noexcept;
+
+		[[nodiscard]] ScreenState states() noexcept;
 	private:
-		ScreenState& state;
+		ScreenState state;
 	};
 
 	extern std::unique_ptr<FeaturesScreen> features_screen;

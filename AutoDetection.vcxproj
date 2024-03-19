@@ -134,10 +134,10 @@
     <ClCompile Include="CaptureScreen\Resolution\Resolution.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CaptureScreen\Resolution\States\ResolutionStates.h" />
-    <ClInclude Include="CaptureScreen\Screen.h" />
-    <ClInclude Include="CaptureScreen\States\ScreenStates.h" />
-    <ClInclude Include="CaptureScreen\Resolution\Resolution.h" />
+    <ClInclude Include="CaptureScreen\Resolution\States\ResolutionStates.hpp" />
+    <ClInclude Include="CaptureScreen\Screen.hpp" />
+    <ClInclude Include="CaptureScreen\States\ScreenStates.hpp" />
+    <ClInclude Include="CaptureScreen\Resolution\Resolution.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
