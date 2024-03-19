@@ -9,6 +9,7 @@ namespace Screen
 	{
 	public:
 		Resolution(ResolutionState& state_);
+
 	private:
 		ResolutionState& state;
 	};
